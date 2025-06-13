@@ -43,4 +43,4 @@ This is a demo Express app showcasing the [@flagsync/node-sdk](https://github.co
 ## 📖 Documentation
 
 For more detailed information about the SDK features and usage, visit:
-- [Node.js SDK Documentation](https://docs.flagsync.com/sdks-server-side/nodejs#evaluate-flags)
+- [Node.js SDK Documentation](https://docs.flagsync.com/sdks-server-side/nodejs)
