@@ -17,7 +17,7 @@ FlagSync provides a comprehensive set of SDKs for feature management across vari
 - [Next.js SDK](./nextjs) - For Next.js applications
 - [Nest.js SDK](./nestjs) - For Nest.js applications
 
-## 👇Getting Started
+## 👇 Getting Started
 
 Each SDK directory contains a complete example application demonstrating:
 - SDK initialization and configuration
