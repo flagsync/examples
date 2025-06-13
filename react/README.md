@@ -2,7 +2,7 @@
 
 This repository serves as a demonstration and testing ground for the `@flagsync/react-sdk`. It showcases various features and capabilities of the SDK through practical examples.
 
-## Features Demonstrated
+## ✨ Features Demonstrated
 
 - **Feature Flag Management**: Using the `useFlag` hook to get flags value with type safety and loading states
 - **Event Tracking**: Implementation of the `useTrack` hook for user action tracking
@@ -10,7 +10,7 @@ This repository serves as a demonstration and testing ground for the `@flagsync/
 - **Real-time Updates**: Demonstration of flag value changes and their effects
 - **Debugging Tools**: Built-in logging for debug purposes
 
-## Getting Started
+## 👇 Getting Started
 
 1. Add the FlagSync SDK key for the target environment to `.env`:
 
