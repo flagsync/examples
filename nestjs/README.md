@@ -23,7 +23,7 @@ This is a demo Nest.js app showcasing the [@flagsync/nestjs-sdk](https://github.
 3. Visit [http://localhost:3000/](http://localhost:3000/) to see the flag value.
 4. Toggle the flag in the [Flags Dashboard](https://www.flagsync.com/dashboard/flags/) and refresh to see changes.
 
-## Example Response
+## 🔧 Example Response
 
 ```json
 {
@@ -40,7 +40,7 @@ This is a demo Nest.js app showcasing the [@flagsync/nestjs-sdk](https://github.
 }
 ```
 
-## Documentation
+## 📖 Documentation
 
 For more detailed information about the SDK features and usage, visit:
 - [Nest.js SDK Documentation](https://docs.flagsync.com/sdks-server-side/nestjs#evaluate-flags)

@@ -29,13 +29,13 @@ This is a demo React app showcasing the [@flagsync/react-sdk](https://github.com
 4. Visit [http://localhost:5173/](http://localhost:5173/) to see the flag value and try out the examples.
 5. Toggle the flag in the [Flags Dashboard](https://www.flagsync.com/dashboard/flags/) and see real-time updates in the app.
 
-## Example Usage
+## 🔧 Example Usage
 
 ```tsx
 const { value, isReady } = useFlag('my-first-kill-switch', false);
 ```
 
-## Documentation
+## 📖 Documentation
 
 For more detailed information about the SDK features and usage, visit:
 - [React SDK Documentation](https://docs.flagsync.com/sdks-client-side/react)
