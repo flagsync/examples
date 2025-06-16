@@ -1,8 +1,6 @@
 # FlagSync SDK Examples
 
-Official example applications for the FlagSync SDKs.
-
-> Full documentation: [FlagSync Docs](https://docs.flagsync.com/sdks/setup)
+Official example applications for the FlagSync SDKs. Check out the full documentation at [FlagSync Docs](https://docs.flagsync.com/sdks/setup)
 
 ## SDK Examples
 
