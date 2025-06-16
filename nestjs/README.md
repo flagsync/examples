@@ -1,6 +1,6 @@
 # Nest.js SDK Demo
 
-This is a demo Nest.js app showcasing the [@flagsync/nestjs-sdk](https://github.com/flagsync/nestjs-sdk) for feature flag management.
+This is a demo Nest.js app showcasing the [@flagsync/nestjs-sdk](https://github.com/flagsync/nestjs-sdk) for feature flag usage.
 
 ## ✨ Features
 

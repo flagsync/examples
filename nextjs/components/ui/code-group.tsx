@@ -1,10 +1,13 @@
+'use client';
+
 import { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { ghcolors } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-import { CopyToClipboardWithValue } from '@/components/ui/copy-to-clipboard.tsx';
 import { toast } from 'sonner';
-import { cn } from '@/lib/utils.ts';
+
+import { CopyToClipboardWithValue } from '@/components/ui/copy-to-clipboard';
+import { cn } from '@/lib/utils';
 
 interface CodeFile {
   filename: string;

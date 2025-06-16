@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "React SDK demo application",
   "author": "Mike Chabot",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",

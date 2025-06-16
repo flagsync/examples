@@ -1,6 +1,6 @@
 # React SDK Demo
 
-This is a demo React app showcasing the [@flagsync/react-sdk](https://github.com/flagsync/react-sdk) for feature flag management.
+This is a demo React app showcasing the [@flagsync/react-sdk](https://github.com/flagsync/react-sdk) for feature flag usage.
 
 ## ✨ Features
 

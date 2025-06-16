@@ -1,6 +1,6 @@
 # # Node.js SDK Demo
 
-This is a demo Express app showcasing the [@flagsync/node-sdk](https://github.com/flagsync/node-sdk) for feature flag management.
+This is a demo Express app showcasing the [@flagsync/node-sdk](https://github.com/flagsync/node-sdk) for feature flag usage.
 
 ## ✨ Features
 
