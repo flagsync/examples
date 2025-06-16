@@ -13,9 +13,9 @@ This is a demo Next.js app (using app router) showcasing the [@flagsync/nextjs-s
 
 1. Add your FlagSync SDK key to `.env`:
    ```dotenv
-   VITE_FLAGSYNC_SDK_KEY=your-key-here
+   FLAGSYNC_SDK_KEY=your-key-here
    ```
-   > To find this, navigate to the desired workspace environment from the [Dashboard](https://www.flagsync.com/dashboard/settings/organization/workspaces/). Be sure to use a client-side SDK key.
+   > To find this, navigate to the desired workspace environment from the [Dashboard](https://www.flagsync.com/dashboard/settings/organization/workspaces/). Be sure to use a server-side SDK key.
 2. Install dependencies and start the dev server:
    ```bash
    npm install
