@@ -1,24 +1,28 @@
 import type { FsClient, FsUserContext } from '@flagsync/node-sdk';
 
-const FLAG_KEY = 'my-first-kill-switch';
-
 export class AppService {
   constructor(private client: FsClient) {}
 
   doWork(ctx: FsUserContext) {
-    // Evaluate the feature flag using the user context.
-    // This will apply audience targeting, rollout %, and default logic.
-    // More: https://docs.flagsync.com/sdks-server-side/nodejs#evaluate-flags
-    const isEnabled = this.client.flag<boolean>(ctx, FLAG_KEY);
+    /**
+     * Evaluate the feature flag using the user context.
+     * More: https://docs.flagsync.com/sdks-server-side/nodejs#evaluate-flags
+     */
+    const isEnabled = this.client.flag<boolean>(ctx, 'my-first-kill-switch');
 
-    // Track that the user hit this code path for experimentation/analytics.
-    // More: https://docs.flagsync.com/sdks-server-side/nodejs#track-events
-    this.client.track(ctx, 'my-custom-event');
+    // Uncomment if using the FlagSync CLI as the return type will be automatically inferred.
+    // const isEnabled = this.client.flag(ctx, 'my-first-kill-switch');
 
     const flagInfo = {
-      key: FLAG_KEY,
+      key: 'my-first-kill-switch',
       value: isEnabled,
     };
+
+    /**
+     * Track that the user hit this code path for experimentation/analytics.
+     * More: https://docs.flagsync.com/sdks-server-side/nodejs#track-events
+     */
+    this.client.track(ctx, 'my-custom-event');
 
     if (isEnabled) {
       return {

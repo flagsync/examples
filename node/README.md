@@ -7,6 +7,7 @@ This is a demo Express app showcasing the [@flagsync/node-sdk](https://github.co
 - Type-safe flag evaluation
 - Event tracking
 - Real-time flag updates
+- FlagSync CLI included ([@flagsync/cli](https://github.com/flagsync/cli))
 
 ## 🚀 Quick Start
 
@@ -22,6 +23,16 @@ This is a demo Express app showcasing the [@flagsync/node-sdk](https://github.co
    ```
 3. Visit [http://localhost:3000/](http://localhost:3000/) to see the flag value.
 4. Toggle the flag in the [Flags Dashboard](https://www.flagsync.com/dashboard/flags/) and refresh to see changes.
+
+## 🖥️ FlagSync CLI 
+
+> Optional, but highly recommended
+
+Run the FlagSync CLI to get full type safety and autocompletion when accessing flags:
+
+```bash
+npm run generate
+```
 
 ## 🔧 Example Response
 

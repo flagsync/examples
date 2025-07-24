@@ -1,10 +1,8 @@
-import { createFlagSyncClient, createIdentify } from '@flagsync/nextjs-sdk';
+import { createClient, createIdentify } from '@flagsync/nextjs-sdk';
+import { getContext } from '@/lib/flagsync/user-context';
 
-import { getFlagSyncUserContext } from './flagsync.user-context';
-
-export const client = createFlagSyncClient({
+export const client = createClient({
   sdkKey: process.env.FLAGSYNC_SDK_KEY!,
-  logLevel: 'DEBUG',
 });
 
-export const identify = createIdentify(getFlagSyncUserContext);
+export const identify = createIdentify(getContext);

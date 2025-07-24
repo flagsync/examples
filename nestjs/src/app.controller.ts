@@ -9,7 +9,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  async getValue(@UserContext() context: FsUserContext): Promise<string> {
+  async getValue(@UserContext() context: FsUserContext) {
     return this.appService.doWork(context);
   }
 }

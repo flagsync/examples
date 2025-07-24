@@ -1,13 +1,10 @@
-import { createBoolFlagAdaptor } from '@flagsync/nextjs-sdk';
 import { flag } from 'flags/next';
+import { createAdapter } from '@flagsync/nextjs-sdk';
 
 import { client, identify } from '@/lib/flagsync';
 
-const adapterBool = createBoolFlagAdaptor(client);
-
-export const killSwitchFlag = flag<boolean>({
+export const killswitchFlag = flag({
   identify,
-  adapter: adapterBool,
-  defaultValue: false,
   key: 'my-first-kill-switch',
+  adapter: createAdapter(client)<boolean>(),
 });

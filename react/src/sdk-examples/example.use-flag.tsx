@@ -65,7 +65,18 @@ export function ExampleUseFlag() {
             real-time.
           </AlertDescription>
         </Alert>
+        <MyComponent />
       </CardContent>
     </Card>
   );
+}
+
+function MyComponent() {
+  const { value, isReady } = useFlag('alwaysFalsy', false);
+
+  if (!isReady) {
+    return <div>Loading...</div>;
+  }
+
+  return <div>Feature is {value ? 'enabled' : 'disabled'}</div>;
 }

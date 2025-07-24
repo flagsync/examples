@@ -1,19 +1,20 @@
-import { killSwitchFlag } from '@/lib/flagsync/flags';
-import { ExampleFlag } from '@/app/_components/example.flag';
-import { Button } from '@/components/ui/button';
 import { cookies, headers } from 'next/headers';
-import { getFlagSyncUserContext } from '@/lib/flagsync/flagsync.user-context';
+import { killswitchFlag } from '@/lib/flagsync/flags';
 import { client } from '@/lib/flagsync';
 
+import { ExampleFlag } from '@/app/_components/example.flag';
+import { Button } from '@/components/ui/button';
+import { getContext } from '@/lib/flagsync/user-context';
+
 export async function ExampleFlagServer() {
-  const killSwitch = await killSwitchFlag();
+  const killswitch = await killswitchFlag();
   return (
     <>
-      <ExampleFlag name={killSwitchFlag.key} value={killSwitch} />
+      <ExampleFlag name={killswitchFlag.key} value={killswitch} />
       <Button
         onClick={async () => {
           'use server';
-          const ctx = await getFlagSyncUserContext({
+          const ctx = await getContext({
             cookies: await cookies(),
             headers: await headers(),
           });

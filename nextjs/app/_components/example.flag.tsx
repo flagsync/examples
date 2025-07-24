@@ -1,5 +1,6 @@
 'use client';
 
+import { CellContext, ColumnDef } from '@tanstack/react-table';
 import { Code2, Lightbulb } from 'lucide-react';
 
 import {
@@ -13,7 +14,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { DataTable } from '@/components/ui/data-table';
 
 import { LinkStyled } from '@/components/link.styled';
-import { tableColumns } from '@/components/table.columns';
+import { TypographyInlineCode } from '@/components/ui/typography';
 
 /**
  * Check out the documentation below to learn more about SDK hooks:
@@ -48,3 +49,31 @@ export function ExampleFlag({ name, value }: { name: string; value: boolean }) {
     </Card>
   );
 }
+
+interface FlagData {
+  key: string;
+  value: string | number | boolean | object;
+}
+
+const tableColumns: ColumnDef<FlagData>[] = [
+  {
+    accessorKey: 'key',
+    header: 'Key',
+    cell: ({ getValue }: CellContext<FlagData, unknown>) => {
+      return (
+        <TypographyInlineCode>{getValue() as string}</TypographyInlineCode>
+      );
+    },
+  },
+  {
+    accessorKey: 'value',
+    header: 'Value',
+    cell: ({ getValue }: CellContext<FlagData, unknown>) => {
+      return (
+        <TypographyInlineCode>
+          {JSON.stringify(getValue())}
+        </TypographyInlineCode>
+      );
+    },
+  },
+];

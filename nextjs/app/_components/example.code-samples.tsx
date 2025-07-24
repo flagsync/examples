@@ -3,6 +3,7 @@ import {
   FLAGSYNC_CLIENT,
   INSTALL_COMMAND,
   KILL_SWITCH_FLAG,
+  USER_CONTEXT,
 } from '@/app/constants';
 import { CodeGroup } from '@/components/ui/code-group';
 
@@ -21,12 +22,16 @@ export function ExampleCodeSamples() {
           content: FLAG_TSX,
         },
         {
-          filename: '@lib/flagsync/flags.tsx',
+          filename: '@lib/flagsync/flags.ts',
           content: KILL_SWITCH_FLAG,
         },
         {
-          filename: '@lib/flagsync/index.tsx',
+          filename: '@lib/flagsync',
           content: FLAGSYNC_CLIENT,
+        },
+        {
+          filename: '@lib/flagsync/user-context.ts',
+          content: USER_CONTEXT,
         },
       ]}
     />
