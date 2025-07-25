@@ -13,7 +13,7 @@ export class AppService {
      */
     const isEnabled = this.client.flag<boolean>(ctx, 'my-first-kill-switch');
 
-    // NOTE: Uncomment the line below if using the FlagSync CLI as the return type will be automatically inferred.
+    // NOTE: FlagSync CLI users: uncomment the below since the return type will be automatically inferred.
     // const isEnabled = this.client.flag(ctx, 'my-first-kill-switch');
 
     const flagInfo = {

@@ -4,10 +4,10 @@ This is a demo React app showcasing the [@flagsync/js-sdk](https://github.com/fl
 
 ## ✨ Features
 
-- Type-safe flag evaluation with the `flag` function
+- Type-safe flag evaluation
+- Event tracking
 - Real-time flag updates
-- SDK configuration options
-- Debug logging
+- FlagSync CLI included ([@flagsync/cli](https://github.com/flagsync/cli))
 
 ## 🚀 Quick Start
 
@@ -27,6 +27,16 @@ This is a demo React app showcasing the [@flagsync/js-sdk](https://github.com/fl
    ```
 4. Visit [http://localhost:5173/](http://localhost:5173/) to see the flag value and try out the examples.
 5. Toggle the flag in the [Flags Dashboard](https://www.flagsync.com/dashboard/flags/) and see real-time updates in the app on refresh.
+
+## 🖥️ FlagSync CLI
+
+> Optional, but highly recommended
+
+Run the FlagSync CLI to get full type safety and autocompletion when accessing flags:
+
+```bash
+npm run generate
+```
 
 ## 🔧 Example Usage
 
