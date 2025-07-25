@@ -14,8 +14,6 @@ import { DataTable } from '@/components/ui/data-table';
 import { tableColumns } from '@/components/table.columns';
 import { LinkStyled } from '@/components/link.styled.tsx';
 
-const FLAG_KEY = 'my-first-kill-switch';
-
 /**
  * Check out the documentation below to learn more about SDK hooks:
  * https://docs.flagsync.com/sdks-client-side/react#hooks
@@ -33,9 +31,13 @@ export function ExampleUseFlag() {
    *    - useFlag<boolean>('my-first-kill-switch', false)
    */
   const { key, value, isReady, isReadyFromStore } = useFlag<boolean>(
-    FLAG_KEY,
-    false,
+    'my-first-kill-switch',
   );
+
+  // NOTE: FlagSync CLI users: uncomment the below since the return type will be automatically inferred.
+  // const { key, value, isReady, isReadyFromStore } = useFlag(
+  //   'my-first-kill-switch',
+  // );
 
   return (
     <Card>
@@ -65,18 +67,7 @@ export function ExampleUseFlag() {
             real-time.
           </AlertDescription>
         </Alert>
-        <MyComponent />
       </CardContent>
     </Card>
   );
-}
-
-function MyComponent() {
-  const { value, isReady } = useFlag('alwaysFalsy', false);
-
-  if (!isReady) {
-    return <div>Loading...</div>;
-  }
-
-  return <div>Feature is {value ? 'enabled' : 'disabled'}</div>;
 }

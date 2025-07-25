@@ -9,10 +9,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate": "npx flagsync generate"
   },
   "dependencies": {
-    "@flagsync/react-sdk": "0.6.10",
+    "@flagsync/react-sdk": "^0.7.1",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/react-scroll-area": "^1.2.9",
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@flagsync/cli": "^0.3.3",
     "@types/node": "^22.15.30",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
