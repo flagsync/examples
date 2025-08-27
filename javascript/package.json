@@ -17,7 +17,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@flagsync/js-sdk": "^0.6.3",
+    "@flagsync/js-sdk": "0.6.4-alpha.1",
     "@tailwindcss/vite": "^4.1.10",
     "tailwindcss": "^4.1.10"
   }
