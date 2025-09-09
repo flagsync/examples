@@ -21,7 +21,7 @@ This is a demo Nest.js app showcasing the [@flagsync/nestjs-sdk](https://github.
    npm install
    npm run start:dev
    ```
-3. Visit [http://localhost:3000/](http://localhost:3000/) to see the flag value.
+3. Visit [http://localhost:3001/](http://localhost:3001/) to see the flag value.
 4. Toggle the flag in the [Flags Dashboard](https://www.flagsync.com/dashboard/flags/) and refresh to see changes.
 
 ## 🖥️ FlagSync CLI

@@ -8,7 +8,7 @@ import { INestApplication } from '@nestjs/common';
   try {
     app = await NestFactory.create(AppModule);
     app.enableShutdownHooks();
-    await app.listen(3000);
+    await app.listen(3001);
   } catch (e: unknown) {
     console.error(e);
     console.error('Catastrophic failure. Shutting down process.');
