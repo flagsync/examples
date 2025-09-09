@@ -14,7 +14,10 @@ const app = express();
 const port = 3000;
 
 // Initialize the SDK
-const factory = FlagSyncFactory({ sdkKey, logLevel: 'DEBUG' });
+const factory = FlagSyncFactory({
+  sdkKey,
+  logLevel: 'DEBUG',
+});
 
 // Get the client
 const client = factory.client();
