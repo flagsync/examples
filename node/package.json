@@ -19,7 +19,7 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "@flagsync/cli": "0.3.3",
+    "@flagsync/cli": "0.4.0",
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.1",
     "prettier": "^3.2.5",
